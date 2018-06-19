@@ -8,3 +8,5 @@ def my_select(collection)
  end 
  return numbers
 end
+
+my_select(nums) {|num| num.even?}
