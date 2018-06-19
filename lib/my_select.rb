@@ -2,8 +2,8 @@ def my_select(collection)
  # your code here!
  i = 0 
  numbers = []
- while i < collection.length 
-   if yield(collection[i] == true)
+ while i < collection.length
+   if yield(collection[i]) == true
      numbers.push(collection[i])
    i+=1 
  end 
