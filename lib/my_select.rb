@@ -3,7 +3,8 @@ def my_select(collection)
  i = 0 
  numbers = []
  while i < collection.length 
-   numbers.push(yield(collection[i]))
+   if yield(collection[i] == true)
+     numbers.push(collection[i])
    i+=1 
  end 
  return numbers
